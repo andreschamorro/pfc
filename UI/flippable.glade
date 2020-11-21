@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.36.0 -->
+<interface>
+  <requires lib="gtk+" version="3.22"/>
+  <object class="GtkTextBuffer" id="answer_buffer"/>
+  <object class="GtkTextBuffer" id="question_buffer"/>
+  <object class="GtkBox" id="card_draw">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="orientation">vertical</property>
+    <property name="homogeneous">True</property>
+    <child>
+      <object class="GtkTextView" id="question">
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="margin_left">5</property>
+        <property name="margin_right">5</property>
+        <property name="margin_top">5</property>
+        <property name="margin_bottom">5</property>
+        <property name="vexpand">True</property>
+        <property name="editable">False</property>
+        <property name="justification">center</property>
+        <property name="left_margin">5</property>
+        <property name="right_margin">5</property>
+        <property name="top_margin">5</property>
+        <property name="bottom_margin">5</property>
+        <property name="buffer">question_buffer</property>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="fill">True</property>
+        <property name="position">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkTextView" id="answer">
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="margin_left">5</property>
+        <property name="margin_right">5</property>
+        <property name="margin_top">5</property>
+        <property name="margin_bottom">5</property>
+        <property name="vexpand">True</property>
+        <property name="justification">center</property>
+        <property name="left_margin">5</property>
+        <property name="right_margin">5</property>
+        <property name="top_margin">5</property>
+        <property name="bottom_margin">5</property>
+        <property name="buffer">answer_buffer</property>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="fill">True</property>
+        <property name="position">1</property>
+      </packing>
+    </child>
+  </object>
+</interface>
